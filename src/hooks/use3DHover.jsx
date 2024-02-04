@@ -46,7 +46,7 @@ const use3DHover = (ref, { x = 0, y = 0, z = 0 }) => {
   const zTransform = isHovering ? z : 0;
 
   const transform = `perspective(1000px) rotateX(${yTransform}deg) rotateY(${-xTransform}deg) translateZ(${zTransform}px)`;
-  const transition = isHovering ? "all 0.1s ease" : "all 0.1s ease";
+  const transition = isHovering ? "all 0.1s ease" : "all 0.2s ease";
 
   return { transform, transition };
 };
